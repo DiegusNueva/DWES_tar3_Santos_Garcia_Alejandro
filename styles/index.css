@@ -1,0 +1,63 @@
+header {
+    text-align: center;
+    margin: 200px 0 80px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #005fb8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.registrar-boton {
+    text-decoration: none;
+    text-align: center;
+    background-color: #7fb800;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.registrar-boton:hover {
+    background-color: #89c200;
+}
+
+.login-error {
+    text-align: center;
+    background-color: #dd042b;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+}

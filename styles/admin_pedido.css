@@ -1,0 +1,267 @@
+.container {
+    margin-bottom: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.arrow-down {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#cerrar-sesion {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.oferta-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#mostrar-pedido {
+    background-color: #ff0042;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.pedido {
+    margin-bottom: 20px;
+}
+
+.pizza-select,
+.pizza-cantidad {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.pizza-select {
+    width: 200px;
+}
+
+.pizza-cantidad {
+    width: 60px;
+}
+
+.pizza-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff0042;
+    color: #fff;
+}
+
+.eliminar-pizza {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.agregar-pizza {
+    background-color: #ff0042;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.pagar-boton {
+    background-color: #005fb8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #005fb8;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.edit-btn:hover {
+    text-decoration: none;
+    background-color: #0069d9;
+}
+.delete-btn {
+    background-color: #dd042b;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.delete-btn:hover {
+    text-decoration: none;
+    background-color: #e7042b;
+}
+.cancel-btn {
+    text-align: center;
+    color: #000;
+    padding: 5px;
+}
+.cancel-btn:hover {
+    text-decoration: underline;
+}
+
+.pizzas-data {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #005fb8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.pizzas-top ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pizzas-top li:first-child {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ff0042;
+}
+
+.pizzas-top li:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f5225a;
+}
+
+.pizzas-top li:nth-child(3) {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #f74876;
+}
+
+.error-message {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    background-color: #dd042b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.success-message {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    background-color: #00a854;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
