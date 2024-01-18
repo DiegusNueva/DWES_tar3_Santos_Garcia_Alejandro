@@ -115,7 +115,7 @@ if (isset($_GET['cerrar_sesion'])) {
             <img width="250px" src="assets/DominosLogo.png" alt="Domino's Logo">
             <div>
                 <?php
-                session_start();
+                //session_start();
                 if (isset($_SESSION["nombre"])) {
                     echo "<h2>Bienvenido " . $_SESSION["nombre"] . "<span class='arrow-down'>▼</span></h2>";
                 }
