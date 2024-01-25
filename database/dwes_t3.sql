@@ -205,7 +205,7 @@ ALTER TABLE `pedidos`
   ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id`);
 COMMIT;
 
-CON USUARIO y CONTRASEÑA que no sea ROOT:
+-- CON USUARIO y CONTRASEÑA que no sea ROOT:
 
 -- Crear usuario y conceder privilegios
 CREATE USER 'alejandro'@'localhost' IDENTIFIED BY 'asantinos';
