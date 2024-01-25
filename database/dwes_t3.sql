@@ -205,6 +205,16 @@ ALTER TABLE `pedidos`
   ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id`);
 COMMIT;
 
+CON USUARIO y CONTRASEÑA que no sea ROOT:
+
+-- Crear usuario y conceder privilegios
+CREATE USER 'alejandro'@'localhost' IDENTIFIED BY 'asantinos';
+GRANT USAGE ON *.* TO 'alejandro'@'localhost' IDENTIFIED BY 'asantinos';
+GRANT ALL PRIVILEGES ON `dwes_t3`.* TO 'alejandro'@'localhost';
+
+-- Asegurar que los cambios se apliquen
+FLUSH PRIVILEGES;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
